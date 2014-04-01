@@ -75,7 +75,7 @@
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" id="6ka-DN-vCl">
                                 <rect key="frame" x="89" y="122" width="132" height="132"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
