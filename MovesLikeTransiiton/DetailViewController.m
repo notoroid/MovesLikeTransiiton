@@ -140,7 +140,7 @@
                     [UIView animateWithDuration:duration delay:.0f usingSpringWithDamping:.8f initialSpringVelocity:0 options:0 animations:^{
                         fromView.frame = frame;
                         circleView.frame = centerViewPlaceHolderRect;
-                        
+                    } completion:^(BOOL finished) {
                         // サークルを遷移先に移動
                         [circleView removeFromSuperview];
                         [toView addSubview:circleView];
@@ -149,7 +149,7 @@
                         
                         [circleView addGestureRecognizer:rootViewController.circleTapGesture];
                         
-                    } completion:^(BOOL finished) {
+                        
                         [_pullInteraction.transitionContext completeTransition:YES];
                         
                         [_pullInteraction.delegate pullInteractionDidFinish:_pullInteraction];
